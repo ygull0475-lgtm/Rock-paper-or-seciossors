@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>✊ ✋ ✌️</h1>
+    <h2>Rock Paper Scissors</h2>
+
+    <div class="buttons">
+      <button onclick="playGame('rock')">🪨 Rock</button>
+      <button onclick="playGame('paper')">📄 Paper</button>
+      <button onclick="playGame('scissors')">✂️ Scissors</button>
+    </div>
+
+    <div class="cheat-section">
+      <input
+        type="text"
+        id="cheatInput"
+        placeholder="Enter secret code..."
+      >
+      <button onclick="playBomb()">Launch Secret Code</button>
+    </div>
+
+    <div class="result-card">
+      <p id="userChoice">Your Choice: -</p>
+      <p id="computerChoice">Computer Choice: -</p>
+      <h3 id="winner">Choose an option to start!</h3>
+    </div>
+
+    <div class="scoreboard">
+      <div>
+        <h3>You</h3>
+        <span id="userScore">0</span>
+      </div>
+
+      <div>
+        <h3>Computer</h3>
+        <span id="computerScore">0</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

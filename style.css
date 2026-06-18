@@ -1,0 +1,107 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI,sans-serif;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+  padding:20px;
+}
+
+.container{
+  background:white;
+  padding:35px;
+  border-radius:20px;
+  width:100%;
+  max-width:700px;
+  text-align:center;
+  box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+h1{
+  font-size:3rem;
+}
+
+h2{
+  margin-bottom:25px;
+  color:#333;
+}
+
+.buttons{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-bottom:25px;
+}
+
+button{
+  border:none;
+  padding:12px 24px;
+  border-radius:12px;
+  cursor:pointer;
+  font-size:1rem;
+  transition:.3s;
+  background:#667eea;
+  color:white;
+}
+
+button:hover{
+  transform:translateY(-3px);
+}
+
+.cheat-section{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-bottom:25px;
+}
+
+input{
+  padding:12px;
+  border:2px solid #ddd;
+  border-radius:10px;
+  width:220px;
+}
+
+.result-card{
+  background:#f5f7ff;
+  padding:20px;
+  border-radius:15px;
+  margin-bottom:25px;
+}
+
+.result-card p{
+  margin:10px 0;
+  font-size:18px;
+}
+
+#winner{
+  margin-top:15px;
+  color:#4a3aff;
+}
+
+.scoreboard{
+  display:flex;
+  justify-content:space-around;
+}
+
+.scoreboard div{
+  background:#f8f8f8;
+  padding:20px;
+  width:120px;
+  border-radius:15px;
+}
+
+.scoreboard span{
+  font-size:2rem;
+  font-weight:bold;
+  color:#667eea;
+}
